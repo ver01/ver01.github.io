@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>@ver01/form - Ver01</title>
+<title>Manual - Ver01</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
-    <meta name="description" content="Table of Contents Deprecation Online Demo local Demo   Usage Initialize npm import Uncontrolled Mode Controlled Mode   Theme   Requirement Theme Official theme Custom theme Component Schema Dynamic pr">
+    <meta name="description" content="DeprecationVer01 Form is standalone lib for render JsonSchem to React Form，with different react themes supports. Online Demohttps://codesandbox.io/embed/0mlpp16yy0 local DemoLocal demo with schema usa">
 <meta name="keywords" content="React,Form,JsonSchema,Document">
 <meta property="og:type" content="article">
-<meta property="og:title" content="@ver01&#x2F;form">
+<meta property="og:title" content="Manual">
 <meta property="og:url" content="https://ver01.com/2019/05/06/ver01-form/index.html">
 <meta property="og:site_name" content="Ver01">
-<meta property="og:description" content="Table of Contents Deprecation Online Demo local Demo   Usage Initialize npm import Uncontrolled Mode Controlled Mode   Theme   Requirement Theme Official theme Custom theme Component Schema Dynamic pr">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-06T03:53:01.372Z">
+<meta property="og:description" content="DeprecationVer01 Form is standalone lib for render JsonSchem to React Form，with different react themes supports. Online Demohttps://codesandbox.io/embed/0mlpp16yy0 local DemoLocal demo with schema usa">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-05-08T13:43:45.224Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="@ver01&#x2F;form">
-<meta name="twitter:description" content="Table of Contents Deprecation Online Demo local Demo   Usage Initialize npm import Uncontrolled Mode Controlled Mode   Theme   Requirement Theme Official theme Custom theme Component Schema Dynamic pr">
+<meta name="twitter:title" content="Manual">
+<meta name="twitter:description" content="DeprecationVer01 Form is standalone lib for render JsonSchem to React Form，with different react themes supports. Online Demohttps://codesandbox.io/embed/0mlpp16yy0 local DemoLocal demo with schema usa">
 
 
 
@@ -100,7 +100,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="@ver01/form" height="28">
+                <img src="/images/logo.png" alt="Manual" height="28">
             
             </a>
         </div>
@@ -117,6 +117,10 @@
                     </a>
                     
                 
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
                 
                 
                 <a class="navbar-item search" title="Search" href="javascript:;">
@@ -140,14 +144,14 @@
                 <time class="level-item has-text-grey" datetime="2019-05-05T17:29:47.000Z">2019-05-06</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/ver01-form/">@ver01/form</a>
+                <a class="has-link-grey -link" href="/categories/ver01-form/">@ver01/form</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/ver01-form/Manual/">Manual</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 942 words)
+                    6 minutes read (About 831 words)
                 </span>
                 
                 
@@ -156,62 +160,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                @ver01/form
+                Manual
             
         </h1>
         <div class="content">
-            <h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h2><ul>
-<li><a href="#deprecation">Deprecation</a><ul>
-<li><a href="#online-demo">Online Demo</a></li>
-<li><a href="#local-demo">local Demo</a></li>
-</ul>
-</li>
-<li><a href="#usage">Usage</a><ul>
-<li><a href="#initialize">Initialize</a><ul>
-<li><a href="#npm-import">npm import</a></li>
-<li><a href="#uncontrolled-mode">Uncontrolled Mode</a></li>
-<li><a href="#controlled-mode">Controlled Mode</a></li>
-</ul>
-</li>
-<li><a href="#theme">Theme</a></li>
-</ul>
-</li>
-<li><a href="#requirement">Requirement</a></li>
-<li><a href="#theme">Theme</a><ul>
-<li><a href="#official-theme">Official theme</a></li>
-<li><a href="#custom-theme">Custom theme</a><ul>
-<li><a href="#component-schema">Component Schema</a></li>
-<li><a href="#dynamic-props-generator-rule">Dynamic props generator rule</a><ul>
-<li><a href="#for-props">for props</a></li>
-<li><a href="#for-widgetcomponentschema">for WidgetComponentSchema</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#value">Value</a><ul>
-<li><a href="#value-in">Value In</a><ul>
-<li><a href="#uncontrolled-mode">Uncontrolled Mode</a></li>
-<li><a href="#controlled-mode">Controlled Mode</a></li>
-</ul>
-</li>
-<li><a href="#value-out">Value Out</a></li>
-<li><a href="#validate">Validate</a></li>
-</ul>
-</li>
-<li><a href="#json-schema-support">JSON Schema Support</a><ul>
-<li><a href="#vf_opt">$vf_opt</a><ul>
-<li><a href="#vf_opt-widget">$vf_opt.widget</a></li>
-<li><a href="#vf_opt-option">$vf_opt.option</a></li>
-<li><a href="#vf_opt-validate">$vf_opt.validate</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Deprecation"><a href="#Deprecation" class="headerlink" title="Deprecation"></a>Deprecation</h2><p>Ver01 Form is standalone lib for render JsonSchem to React Form，with different react themes supports.</p>
+            <h2 id="Deprecation"><a href="#Deprecation" class="headerlink" title="Deprecation"></a>Deprecation</h2><p>Ver01 Form is standalone lib for render JsonSchem to React Form，with different react themes supports.</p>
 <h3 id="Online-Demo"><a href="#Online-Demo" class="headerlink" title="Online Demo"></a>Online Demo</h3><p><a href="https://codesandbox.io/embed/0mlpp16yy0" target="_blank" rel="noopener">https://codesandbox.io/embed/0mlpp16yy0</a></p>
 <h3 id="local-Demo"><a href="#local-Demo" class="headerlink" title="local Demo"></a>local Demo</h3><p><strong>Local demo with schema usage demo code</strong></p>
 <blockquote>
@@ -316,6 +269,20 @@
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/05/07/Start/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Start</span>
+            </a>
+        </div>
+        
+        
+    </div>
+</div>
+
 
 </div>
                 
@@ -328,94 +295,6 @@
         
 <div class="card widget">
     <div class="card-content">
-        <nav class="level">
-            <div class="level-item has-text-centered">
-                <div>
-                    
-                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="ver01">
-                    
-                    
-                    <p class="is-size-4 is-block">
-                        ver01
-                    </p>
-                    
-                    
-                    <p class="is-size-6 is-block">
-                        ver01
-                    </p>
-                    
-                    
-                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
-                        <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>internet</span>
-                    </p>
-                    
-                </div>
-            </div>
-        </nav>
-        <nav class="level is-mobile">
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        Post
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        1
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        Category
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        1
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        Tags
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        4
-                    </p>
-                </div>
-            </div>
-        </nav>
-        <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/ver01" target="_blank">
-                Follow</a>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/ver01">
-                
-                <i class="fab fa-github"></i>
-                
-            </a>
-            
-        </div>
-        
-    </div>
-</div>
-    
-        
-    
-        
-
-
-    
-    
-        <div class="column-right-shadow is-hidden-widescreen is-sticky">
-        
-            
-<div class="card widget">
-    <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
                 Categories
@@ -426,84 +305,17 @@
             <span class="level-start">
                 <span class="level-item">@ver01/form</span>
             </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-        
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                Tags
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Document/">
-                        <span class="tag">Document</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Form/">
-                        <span class="tag">Form</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/JsonSchema/">
-                        <span class="tag">JsonSchema</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/React/">
-                        <span class="tag">React</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-        
-        </div>
-    
-</div>
-
-                
-
-
-
-
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                Categories
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/ver01-form/">
+        </a><ul><li>
+        <a class="level is-marginless" href="/categories/ver01-form/Manual/">
             <span class="level-start">
-                <span class="level-item">@ver01/form</span>
+                <span class="level-item">Manual</span>
             </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/ver01-form/Start/">
+            <span class="level-start">
+                <span class="level-item">Start</span>
             </span>
-        </a></li>
+        </a></li></ul></li>
             </ul>
         </div>
     </div>
@@ -551,6 +363,214 @@
 </div>
     
     
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Deprecation">
+        <span class="has-mr-6">1</span>
+        <span>Deprecation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Online-Demo">
+        <span class="has-mr-6">1.1</span>
+        <span>Online Demo</span>
+        </a></li><li>
+        <a class="is-flex" href="#local-Demo">
+        <span class="has-mr-6">1.2</span>
+        <span>local Demo</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Usage">
+        <span class="has-mr-6">2</span>
+        <span>Usage</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Initialize">
+        <span class="has-mr-6">2.1</span>
+        <span>Initialize</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#npm-import">
+        <span class="has-mr-6">2.1.1</span>
+        <span>npm import</span>
+        </a></li><li>
+        <a class="is-flex" href="#Uncontrolled-Mode">
+        <span class="has-mr-6">2.1.2</span>
+        <span>Uncontrolled Mode</span>
+        </a></li><li>
+        <a class="is-flex" href="#Controlled-Mode">
+        <span class="has-mr-6">2.1.3</span>
+        <span>Controlled Mode</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Theme">
+        <span class="has-mr-6">2.2</span>
+        <span>Theme</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Requirement">
+        <span class="has-mr-6">3</span>
+        <span>Requirement</span>
+        </a></li><li>
+        <a class="is-flex" href="#Theme-1">
+        <span class="has-mr-6">4</span>
+        <span>Theme</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Official-theme">
+        <span class="has-mr-6">4.1</span>
+        <span>Official theme</span>
+        </a></li><li>
+        <a class="is-flex" href="#Custom-theme">
+        <span class="has-mr-6">4.2</span>
+        <span>Custom theme</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Component-Schema">
+        <span class="has-mr-6">4.2.1</span>
+        <span>Component Schema</span>
+        </a></li><li>
+        <a class="is-flex" href="#Dynamic-props-generator-rule">
+        <span class="has-mr-6">4.2.2</span>
+        <span>Dynamic props generator rule</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Value">
+        <span class="has-mr-6">4.3</span>
+        <span>Value</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Value-In">
+        <span class="has-mr-6">4.3.1</span>
+        <span>Value In</span>
+        </a></li><li>
+        <a class="is-flex" href="#Value-Out">
+        <span class="has-mr-6">4.3.2</span>
+        <span>Value Out</span>
+        </a></li><li>
+        <a class="is-flex" href="#Validate">
+        <span class="has-mr-6">4.3.3</span>
+        <span>Validate</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#JSON-Schema-Support">
+        <span class="has-mr-6">4.4</span>
+        <span>JSON Schema Support</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#vf-opt">
+        <span class="has-mr-6">4.4.1</span>
+        <span>$vf_opt</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Deprecation">
+        <span class="has-mr-6">1</span>
+        <span>Deprecation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Online-Demo">
+        <span class="has-mr-6">1.1</span>
+        <span>Online Demo</span>
+        </a></li><li>
+        <a class="is-flex" href="#local-Demo">
+        <span class="has-mr-6">1.2</span>
+        <span>local Demo</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Usage">
+        <span class="has-mr-6">2</span>
+        <span>Usage</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Initialize">
+        <span class="has-mr-6">2.1</span>
+        <span>Initialize</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#npm-import">
+        <span class="has-mr-6">2.1.1</span>
+        <span>npm import</span>
+        </a></li><li>
+        <a class="is-flex" href="#Uncontrolled-Mode">
+        <span class="has-mr-6">2.1.2</span>
+        <span>Uncontrolled Mode</span>
+        </a></li><li>
+        <a class="is-flex" href="#Controlled-Mode">
+        <span class="has-mr-6">2.1.3</span>
+        <span>Controlled Mode</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Theme">
+        <span class="has-mr-6">2.2</span>
+        <span>Theme</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Requirement">
+        <span class="has-mr-6">3</span>
+        <span>Requirement</span>
+        </a></li><li>
+        <a class="is-flex" href="#Theme-1">
+        <span class="has-mr-6">4</span>
+        <span>Theme</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Official-theme">
+        <span class="has-mr-6">4.1</span>
+        <span>Official theme</span>
+        </a></li><li>
+        <a class="is-flex" href="#Custom-theme">
+        <span class="has-mr-6">4.2</span>
+        <span>Custom theme</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Component-Schema">
+        <span class="has-mr-6">4.2.1</span>
+        <span>Component Schema</span>
+        </a></li><li>
+        <a class="is-flex" href="#Dynamic-props-generator-rule">
+        <span class="has-mr-6">4.2.2</span>
+        <span>Dynamic props generator rule</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Value">
+        <span class="has-mr-6">4.3</span>
+        <span>Value</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Value-In">
+        <span class="has-mr-6">4.3.1</span>
+        <span>Value In</span>
+        </a></li><li>
+        <a class="is-flex" href="#Value-Out">
+        <span class="has-mr-6">4.3.2</span>
+        <span>Value Out</span>
+        </a></li><li>
+        <a class="is-flex" href="#Validate">
+        <span class="has-mr-6">4.3.3</span>
+        <span>Validate</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#JSON-Schema-Support">
+        <span class="has-mr-6">4.4</span>
+        <span>JSON Schema Support</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#vf-opt">
+        <span class="has-mr-6">4.4.1</span>
+        <span>$vf_opt</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+    
+    
 </div>
 
             </div>
@@ -562,7 +582,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="@ver01/form" height="28">
+                    <img src="/images/logo.png" alt="Manual" height="28">
                 
                 </a>
                 <p class="is-size-7">
