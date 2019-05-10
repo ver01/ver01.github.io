@@ -2,17 +2,17 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Categories - Ver01</title>
+<title>Category: 2. Initialize - Ver01</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
     <meta name="description" content="React Form Solution, build form with json-schema.">
-<meta name="keywords" content="React,Form,JsonSchema,Document">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ver01">
-<meta property="og:url" content="https://ver01.com/categories/index.html">
+<meta property="og:url" content="https://ver01.com/categories/ver01-form/2-Initialize/index.html">
 <meta property="og:site_name" content="Ver01">
 <meta property="og:description" content="React Form Solution, build form with json-schema.">
 <meta property="og:locale" content="en">
@@ -130,39 +130,85 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                Categories
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/ver01-form/">
-            <span class="level-start">
-                <span class="level-item">@ver01/form</span>
-            </span>
-        </a><ul><li>
-        <a class="level is-marginless" href="/categories/ver01-form/1-Start/">
-            <span class="level-start">
-                <span class="level-item">1. Start</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/ver01-form/2-Initialize/">
-            <span class="level-start">
-                <span class="level-item">2. Initialize</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/ver01-form/3-Theme/">
-            <span class="level-start">
-                <span class="level-item">3. Theme</span>
-            </span>
-        </a></li></ul></li>
-            </ul>
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">Categories</a></li>
+            
+            <li><a href="/categories/ver01-form/">@ver01/form</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">2. Initialize</a></li>
+        </ul>
+        </nav>
     </div>
-</div></div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-07T16:00:00.000Z">2019-05-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/ver01-form/">@ver01/form</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/ver01-form/2-Initialize/">2. Initialize</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 62 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/08/Initialize/">Initialize</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="import-npm-package"><a href="#import-npm-package" class="headerlink" title="import npm package"></a>import npm package</h2><ul>
+<li><p>Core npm package is <strong>@ver01/form</strong>.</p>
+</li>
+<li><p>Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.</p>
+</li>
+</ul>
+<h2 id="Uncontrolled-Mode"><a href="#Uncontrolled-Mode" class="headerlink" title="Uncontrolled Mode"></a>Uncontrolled Mode</h2><ul>
+<li>With defaultValue props</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Uncontrolled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    defaultValue=&quot;hello World&quot;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://codesandbox.io/embed/211nx6j9kn?fontsize=14" target="_blank" rel="noopener">Live Demo</a> </p>
+</blockquote>
+<h2 id="Controlled-Mode"><a href="#Controlled-Mode" class="headerlink" title="Controlled Mode"></a>Controlled Mode</h2><ul>
+<li>with defaultValue props</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Controlled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    value=&#123;this.state.value&#125;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://codesandbox.io/embed/vy2237jl0l?fontsize=14" target="_blank" rel="noopener">Live Demo</a></p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
                 
 
 
