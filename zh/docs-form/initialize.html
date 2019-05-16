@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Initialize - @ver01/form | Smartly Solution for React Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    
+    <meta name="description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Initialize">
+<meta property="og:url" content="https://ver01.com/zh/docs-form/initialize.html">
+<meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
+<meta property="og:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2019-05-14T12:02:21.116Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Initialize">
+<meta name="twitter:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+
+
+
+
+
+<link rel="icon" href="/zh/images/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136752440-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136752440-1');
+</script>
+
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    
+<nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/zh/">
+            
+                <img src="/zh/images/logo.png" alt="Initialize" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/zh/docs-form">Docs</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="/zh/https://github.com/ver01">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+                
+<script>
+function switchLang()
+    {
+        var nSel = document.getElementById("lang-select");
+        var index = nSel.selectedIndex;
+        window.location= nSel.options[index].value;
+    }
+</script>
+<select id="lang-select" onchange="switchLang();"><option value="/docs-form/initialize.html">English</option><option value="/zh/docs-form/initialize.html" selected="selected">简体中文</option></select>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Initialize
+            
+        </h1>
+        <div class="content">
+            <h2 id="import-npm-package"><a href="#import-npm-package" class="headerlink" title="import npm package"></a>import npm package</h2><ul>
+<li><p>Core npm package is <strong>@ver01/form</strong>.</p>
+</li>
+<li><p>Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.</p>
+</li>
+</ul>
+<h2 id="Uncontrolled-Mode"><a href="#Uncontrolled-Mode" class="headerlink" title="Uncontrolled Mode"></a>Uncontrolled Mode</h2><ul>
+<li>With defaultValue props</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Uncontrolled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    defaultValue=&quot;hello World&quot;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://codesandbox.io/embed/211nx6j9kn?fontsize=14" target="_blank" rel="noopener">Live Demo</a> </p>
+</blockquote>
+<h2 id="Controlled-Mode"><a href="#Controlled-Mode" class="headerlink" title="Controlled Mode"></a>Controlled Mode</h2><ul>
+<li>with defaultValue props</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Controlled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    value=&#123;this.state.value&#125;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://codesandbox.io/embed/vy2237jl0l?fontsize=14" target="_blank" rel="noopener">Live Demo</a></p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+                
+                    
+    
+        
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
+    
+    <div class="card widget">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label" style="color:#d2041c;">
+                    Getting Started
+                </h3>
+                <ul class="menu-list">
+                <li>
+            <a class="level is-marginless" href="/docs-form/">
+                <span class="level-start">
+                    <span class="level-item">Overview</span>
+                </span>
+            </a></li>
+                </ul>
+                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
+                    Basic Usage
+                </h3>
+                <ul class="menu-list">
+                <li>
+            <a class="level is-marginless" href="/docs-form/initialize.html">
+                <span class="level-start" style="color:#d2041c;">
+                    <span class="level-item">Initialize</span>
+                </span>
+            </a></li><li>
+            <a class="level is-marginless" href="/docs-form/value.html">
+                <span class="level-start">
+                    <span class="level-item">Value</span>
+                </span>
+            </a></li><li>
+            <a class="level is-marginless" href="/docs-form/validate.html">
+                <span class="level-start">
+                    <span class="level-item">Validate</span>
+                </span>
+            </a></li>
+                </ul>
+                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
+                    Customization
+                </h3>
+                <ul class="menu-list">
+                <li>
+            <a class="level is-marginless" href="/docs-form/theme.html">
+                <span class="level-start">
+                    <span class="level-item">Theme</span>
+                </span>
+            </a></li><li>
+            <a class="level is-marginless" href="/docs-form/jsonSchema.html">
+                <span class="level-start">
+                    <span class="level-item">JsonSchema</span>
+                </span>
+            </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#import-npm-package">
+        <span class="has-mr-6">1</span>
+        <span>import npm package</span>
+        </a></li><li>
+        <a class="is-flex" href="#Uncontrolled-Mode">
+        <span class="has-mr-6">2</span>
+        <span>Uncontrolled Mode</span>
+        </a></li><li>
+        <a class="is-flex" href="#Controlled-Mode">
+        <span class="has-mr-6">3</span>
+        <span>Controlled Mode</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+        
+        </div>
+    
+</div>
+    
+
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#import-npm-package">
+        <span class="has-mr-6">1</span>
+        <span>import npm package</span>
+        </a></li><li>
+        <a class="is-flex" href="#Uncontrolled-Mode">
+        <span class="has-mr-6">2</span>
+        <span>Uncontrolled Mode</span>
+        </a></li><li>
+        <a class="is-flex" href="#Controlled-Mode">
+        <span class="has-mr-6">3</span>
+        <span>Controlled Mode</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+    
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/zh/">
+                
+                    <img src="/zh/images/logo.png" alt="Initialize" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 ver01.com&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="/zh/https://github.com/ver01">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en,zh");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/zh/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
