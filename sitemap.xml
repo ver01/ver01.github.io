@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://ver01.com/ver01-form/2-Initialize/Initialize/</loc>
-        <lastmod>2019-05-16T09:06:59.857Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/ver01-form/6-JsonSchema/JsonSchema/</loc>
-        <lastmod>2019-05-16T09:07:12.285Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/ver01-form/1-Start/Start/</loc>
-        <lastmod>2019-05-16T09:07:21.441Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/ver01-form/3-Theme/Theme/</loc>
-        <lastmod>2019-05-16T09:07:28.269Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/ver01-form/5-Validate/Validate/</loc>
-        <lastmod>2019-05-16T09:07:36.217Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/ver01-form/4-Value/Value/</loc>
-        <lastmod>2019-05-16T09:07:42.893Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/2-Initialize/Initialize/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/6-JsonSchema/JsonSchema/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/1-Start/Start/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/3-Theme/Theme/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/5-Validate/Validate/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
-        <loc>https://ver01.com/zh/ver01-form/4-Value/Value/</loc>
-        <lastmod>2019-05-16T03:52:47.110Z</lastmod>
-    </url>
-    <url>
         <loc>https://ver01.com/docs-form/index.html</loc>
         <lastmod>2019-05-16T09:08:08.137Z</lastmod>
     </url>
