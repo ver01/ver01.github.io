@@ -2,25 +2,25 @@
 <html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>开始使用 - @ver01/form | Smartly Solution for React Form</title>
+<title>概述 - @ver01/form | 轻编码React表单方案</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
-    <meta name="description" content="Ver01Form is standalone lib for render JsonSchem to React Form，with different react themes supports.  Online Demo Schema Playground local Demogit clone git@github.com:ver01/form.git npm install npm r">
-<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+    <meta name="description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder,表单,antd">
 <meta property="og:type" content="website">
-<meta property="og:title" content="开始使用">
+<meta property="og:title" content="@ver01&#x2F;form | 轻编码React表单方案">
 <meta property="og:url" content="https://ver01.com/zh/docs-form/index.html">
-<meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
-<meta property="og:description" content="Ver01Form is standalone lib for render JsonSchem to React Form，with different react themes supports.  Online Demo Schema Playground local Demogit clone git@github.com:ver01/form.git npm install npm r">
+<meta property="og:site_name" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta property="og:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://codesandbox.io/static/img/play-codesandbox.svg">
-<meta property="og:updated_time" content="2019-05-14T12:02:21.116Z">
+<meta property="og:updated_time" content="2019-05-20T11:32:09.994Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开始使用">
-<meta name="twitter:description" content="Ver01Form is standalone lib for render JsonSchem to React Form，with different react themes supports.  Online Demo Schema Playground local Demogit clone git@github.com:ver01/form.git npm install npm r">
+<meta name="twitter:title" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta name="twitter:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 <meta name="twitter:image" content="https://codesandbox.io/static/img/play-codesandbox.svg">
 
 
@@ -103,7 +103,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/zh/">
             
-                <img src="/zh/images/logo.png" alt="开始使用" height="28">
+                <img src="/zh/images/logo.png" alt="概述" height="28">
             
             </a>
         </div>
@@ -166,19 +166,20 @@ function switchLang()
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                开始使用
+                概述
             
         </h1>
         <div class="content">
             <blockquote>
-<p><strong>Ver01Form</strong> is standalone lib for render JsonSchem to React Form，with different react themes supports.</p>
+<p><strong>@ver01/form</strong> 是一个无依赖的JsonSchema表单渲染引擎，支持当前主流的React主题，同时支持自定义表单主题适配，允许能力的无限扩展</p>
 </blockquote>
-<h2 id="Online-Demo"><a href="#Online-Demo" class="headerlink" title="Online Demo"></a>Online Demo</h2><p><a href="https://codesandbox.io/embed/0mlpp16yy0" target="_blank" rel="noopener"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="CodeSandbox Demo"></a></p>
-<p><a href="https://ver01.com/form/playground/index.html">Schema Playground</a></p>
-<h2 id="local-Demo"><a href="#local-Demo" class="headerlink" title="local Demo"></a>local Demo</h2><p><code>git clone git@github.com:ver01/form.git</code></p>
+<h2 id="在线示例"><a href="#在线示例" class="headerlink" title="在线示例"></a>在线示例</h2><p><a href="https://codesandbox.io/embed/0mlpp16yy0" target="_blank" rel="noopener"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="CodeSandbox Demo"></a></p>
+<p><a href="https://ver01.com/form/playground/index.html">在线Schema表单演示</a></p>
+<h2 id="本地示例"><a href="#本地示例" class="headerlink" title="本地示例"></a>本地示例</h2><p>将项目Clone到本地编译本地示例</p>
+<p><code>git clone git@github.com:ver01/form.git</code></p>
 <p><code>npm install</code></p>
 <p><code>npm run start</code></p>
-<p>visit <a href="http://localhost:8888" target="_blank" rel="noopener">http://localhost:8888</a> for schema demo</p>
+<p>执行上述命令后，访问 <a href="http://localhost:8888" target="_blank" rel="noopener">http://localhost:8888</a> 查看示例</p>
 
         </div>
         
@@ -200,54 +201,56 @@ function switchLang()
 
 
 
+
+
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
     <div class="card widget">
         <div class="card-content">
             <div class="menu">
-                <h3 class="menu-label" style="color:#d2041c;">
-                    Getting Started
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    开始使用
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/">
-                <span class="level-start">
-                    <span class="level-item">Overview</span>
+            <a class="level is-marginless" href="/zh/docs-form/">
+                <span class="level-start" style="color:#d2041c;">
+                    <span class="level-item">概述</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Basic Usage
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    基础用法
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/initialize.html">
+            <a class="level is-marginless" href="/zh/docs-form/initialize.html">
                 <span class="level-start">
-                    <span class="level-item">Initialize</span>
+                    <span class="level-item">初始化</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/value.html">
+            <a class="level is-marginless" href="/zh/docs-form/value.html">
                 <span class="level-start">
-                    <span class="level-item">Value</span>
+                    <span class="level-item">值的提交和回填</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/validate.html">
+            <a class="level is-marginless" href="/zh/docs-form/validate.html">
                 <span class="level-start">
-                    <span class="level-item">Validate</span>
+                    <span class="level-item">错误校验</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Customization
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    自定义
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/theme.html">
+            <a class="level is-marginless" href="/zh/docs-form/theme.html">
                 <span class="level-start">
-                    <span class="level-item">Theme</span>
+                    <span class="level-item">主题</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/jsonSchema.html">
+            <a class="level is-marginless" href="/zh/docs-form/jsonSchema.html">
                 <span class="level-start">
                     <span class="level-item">JsonSchema</span>
                 </span>
@@ -267,13 +270,13 @@ function switchLang()
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#Online-Demo">
+        <a class="is-flex" href="#在线示例">
         <span class="has-mr-6">1</span>
-        <span>Online Demo</span>
+        <span>在线示例</span>
         </a></li><li>
-        <a class="is-flex" href="#local-Demo">
+        <a class="is-flex" href="#本地示例">
         <span class="has-mr-6">2</span>
-        <span>local Demo</span>
+        <span>本地示例</span>
         </a></li></ul>
         </div>
     </div>
@@ -283,6 +286,7 @@ function switchLang()
         </div>
     
 </div>
+
     
 
 
@@ -300,13 +304,13 @@ function switchLang()
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#Online-Demo">
+        <a class="is-flex" href="#在线示例">
         <span class="has-mr-6">1</span>
-        <span>Online Demo</span>
+        <span>在线示例</span>
         </a></li><li>
-        <a class="is-flex" href="#local-Demo">
+        <a class="is-flex" href="#本地示例">
         <span class="has-mr-6">2</span>
-        <span>local Demo</span>
+        <span>本地示例</span>
         </a></li></ul>
         </div>
     </div>
@@ -327,7 +331,7 @@ function switchLang()
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/zh/">
                 
-                    <img src="/zh/images/logo.png" alt="开始使用" height="28">
+                    <img src="/zh/images/logo.png" alt="概述" height="28">
                 
                 </a>
                 <p class="is-size-7">
@@ -474,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 TAGS: '标签',
                 UNTITLED: '(无标题)',
             },
-            CONTENT_URL: '/content.json',
+            CONTENT_URL: '/zh/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);

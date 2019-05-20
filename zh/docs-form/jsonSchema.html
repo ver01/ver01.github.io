@@ -2,24 +2,24 @@
 <html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>JsonSchema - @ver01/form | Smartly Solution for React Form</title>
+<title>JsonSchema - @ver01/form | 轻编码React表单方案</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
-    <meta name="description" content="@ver01/form extended Json Schema define with $vf_opt section $vf_opt.propswill mixin to all components belone to one value node. Filtered by  Component Schema propsMixinList $vf_opt.widgetstring, assi">
-<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+    <meta name="description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder,表单,antd">
 <meta property="og:type" content="website">
-<meta property="og:title" content="JsonSchema">
+<meta property="og:title" content="@ver01&#x2F;form | 轻编码React表单方案">
 <meta property="og:url" content="https://ver01.com/zh/docs-form/jsonSchema.html">
-<meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
-<meta property="og:description" content="@ver01/form extended Json Schema define with $vf_opt section $vf_opt.propswill mixin to all components belone to one value node. Filtered by  Component Schema propsMixinList $vf_opt.widgetstring, assi">
+<meta property="og:site_name" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta property="og:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-05-14T12:02:21.116Z">
+<meta property="og:updated_time" content="2019-05-20T11:29:44.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JsonSchema">
-<meta name="twitter:description" content="@ver01/form extended Json Schema define with $vf_opt section $vf_opt.propswill mixin to all components belone to one value node. Filtered by  Component Schema propsMixinList $vf_opt.widgetstring, assi">
+<meta name="twitter:title" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta name="twitter:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 
 
 
@@ -168,29 +168,30 @@ function switchLang()
             
         </h1>
         <div class="content">
-            <p>@ver01/form extended Json Schema define with <code>$vf_opt</code> section</p>
-<h2 id="vf-opt-props"><a href="#vf-opt-props" class="headerlink" title="$vf_opt.props"></a><code>$vf_opt.props</code></h2><p>will mixin to all components belone to one value node. Filtered by  <a href="/en/ver01-form/3-Theme/Theme/#Component-Schema">Component Schema</a> <code>propsMixinList</code></p>
-<h2 id="vf-opt-widget"><a href="#vf-opt-widget" class="headerlink" title="$vf_opt.widget"></a><code>$vf_opt.widget</code></h2><p>string, assign the component used. Defined in  <a href="/en/ver01-form/3-Theme/Theme/#Component-Schema">Component Schema</a> <code>widgets</code></p>
+            <blockquote>
+<p><strong>@ver01/form</strong> 通过 <code>$vf_opt</code> 字段，拓展了 Json Schema 的定义</p>
+</blockquote>
+<h2 id="vf-opt-props"><a href="#vf-opt-props" class="headerlink" title="$vf_opt.props"></a><code>$vf_opt.props</code></h2><p>Any：字段值将会 mixin 到 value节点对应的所有widget上. widget的使用，会通过 <a href="/zh/docs-form/theme.html#Component-Schema">组件 Schema</a> 的  <code>propsMixinList</code> 字段，进行筛选 </p>
+<h2 id="vf-opt-widget"><a href="#vf-opt-widget" class="headerlink" title="$vf_opt.widget"></a><code>$vf_opt.widget</code></h2><p>String：指定字段使用的widget. widget定义在 <a href="/zh/docs-form/theme.html#Component-Schema">组件 Schema</a> <code>widgets</code> 字段中</p>
 <h2 id="vf-opt-option"><a href="#vf-opt-option" class="headerlink" title="$vf_opt.option"></a><code>$vf_opt.option</code></h2><ul>
-<li>For array<ul>
+<li>array 可用<ul>
 <li>orderable(default true)</li>
 <li>addable(default true)</li>
 <li>removeable(default true)</li>
 </ul>
 </li>
-<li>For string<ul>
+<li>string 可用<ul>
 <li>disabled</li>
 <li>readonly</li>
 </ul>
 </li>
-<li>For object<ul>
+<li>object 可用<ul>
 <li>order: [‘first-key’, ‘second-key’, ‘*’, ‘last-key’]</li>
 </ul>
 </li>
 </ul>
 <h2 id="vf-opt-validate"><a href="#vf-opt-validate" class="headerlink" title="$vf_opt.validate"></a><code>$vf_opt.validate</code></h2><p>[ruleName]: ruleValue</p>
-<p>see sample-validation  <a href="/form/playground/index.html">local demo</a></p>
-<p>Validate can be defined in formProps or buildin validate</p>
+<p>参考 <a href="https://ver01.com/form/playground/index.html">在线Schema表单演示</a> 中的例子：sample-validation</p>
 
         </div>
         
@@ -212,54 +213,56 @@ function switchLang()
 
 
 
+
+
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
     <div class="card widget">
         <div class="card-content">
             <div class="menu">
-                <h3 class="menu-label" style="color:#d2041c;">
-                    Getting Started
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    开始使用
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/">
+            <a class="level is-marginless" href="/zh/docs-form/">
                 <span class="level-start">
-                    <span class="level-item">Overview</span>
+                    <span class="level-item">概述</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Basic Usage
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    基础用法
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/initialize.html">
+            <a class="level is-marginless" href="/zh/docs-form/initialize.html">
                 <span class="level-start">
-                    <span class="level-item">Initialize</span>
+                    <span class="level-item">初始化</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/value.html">
+            <a class="level is-marginless" href="/zh/docs-form/value.html">
                 <span class="level-start">
-                    <span class="level-item">Value</span>
+                    <span class="level-item">值的提交和回填</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/validate.html">
+            <a class="level is-marginless" href="/zh/docs-form/validate.html">
                 <span class="level-start">
-                    <span class="level-item">Validate</span>
+                    <span class="level-item">错误校验</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Customization
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    自定义
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/theme.html">
+            <a class="level is-marginless" href="/zh/docs-form/theme.html">
                 <span class="level-start">
-                    <span class="level-item">Theme</span>
+                    <span class="level-item">主题</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/jsonSchema.html">
+            <a class="level is-marginless" href="/zh/docs-form/jsonSchema.html">
                 <span class="level-start" style="color:#d2041c;">
                     <span class="level-item">JsonSchema</span>
                 </span>
@@ -303,6 +306,7 @@ function switchLang()
         </div>
     
 </div>
+
     
 
 
@@ -502,7 +506,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 TAGS: '标签',
                 UNTITLED: '(无标题)',
             },
-            CONTENT_URL: '/content.json',
+            CONTENT_URL: '/zh/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);

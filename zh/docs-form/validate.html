@@ -2,24 +2,24 @@
 <html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Validate - @ver01/form | Smartly Solution for React Form</title>
+<title>错误校验 - @ver01/form | 轻编码React表单方案</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
-    <meta name="description" content="validate result will export by onValidate method when validate failed, error set as:  validateErrValuePath: the path which part valued valid failed. errorObj: Generate by Component Schema errorObjGene">
-<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+    <meta name="description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder,表单,antd">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Validate">
+<meta property="og:title" content="@ver01&#x2F;form | 轻编码React表单方案">
 <meta property="og:url" content="https://ver01.com/zh/docs-form/validate.html">
-<meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
-<meta property="og:description" content="validate result will export by onValidate method when validate failed, error set as:  validateErrValuePath: the path which part valued valid failed. errorObj: Generate by Component Schema errorObjGene">
+<meta property="og:site_name" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta property="og:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-05-14T12:02:21.116Z">
+<meta property="og:updated_time" content="2019-05-20T11:29:44.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Validate">
-<meta name="twitter:description" content="validate result will export by onValidate method when validate failed, error set as:  validateErrValuePath: the path which part valued valid failed. errorObj: Generate by Component Schema errorObjGene">
+<meta name="twitter:title" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta name="twitter:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 
 
 
@@ -101,7 +101,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/zh/">
             
-                <img src="/zh/images/logo.png" alt="Validate" height="28">
+                <img src="/zh/images/logo.png" alt="错误校验" height="28">
             
             </a>
         </div>
@@ -124,10 +124,6 @@
                     </a>
                     
                 
-                
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
                 
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
@@ -164,22 +160,26 @@ function switchLang()
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Validate
+                错误校验
             
         </h1>
         <div class="content">
-            <p>validate result will export by onValidate method</p>
-<p>when validate failed, error set as:</p>
+            <p>表单错误校验的结果，会通过 onValidate 方法传出 （参数为 error）。</p>
+<p>当表单校验发现错误项目，错误参数 error 定义如下:</p>
 <ul>
-<li>validateErrValuePath: the path which part valued valid failed.</li>
-<li>errorObj: Generate by <a href="/en/ver01-form/3-Theme/Theme/#Component-Schema">Component Schema</a> errorObjGenerator function.</li>
-<li>errors: Generate by <a href="/en/ver01-form/3-Theme/Theme/#Component-Schema">Component Schema</a> validators function<ul>
-<li>return as array</li>
-<li><code>[{  errorType: &quot;errorTypeString&quot;, errorData: AnyType }]</code></li>
+<li>validateErrValuePath: 校验失败的字段路径</li>
+<li>errorObj: 由 <a href="/zh/docs-form/theme.html#Component-Schema">组件 Schema</a> errorObjGenerator 函数输出.</li>
+<li>errors: 由 <a href="/zh/docs-form/theme.html#Component-Schema">组件 Schema</a> validators 函数输出<ul>
+<li>返回值是一个数组</li>
+<li>元素定义为: <code>[{  errorType: &quot;errorTypeString&quot;, errorData: AnyType }]</code></li>
 </ul>
 </li>
 </ul>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">render()&#123;</span><br><span class="line">return &lt;div&gt;</span><br><span class="line">  &lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">      &quot;type&quot;: &quot;object&quot;,</span><br><span class="line">      &quot;required&quot;: [</span><br><span class="line">          &quot;firstName&quot;,</span><br><span class="line">      ],</span><br><span class="line">      &quot;properties&quot;: &#123;</span><br><span class="line">          &quot;firstName&quot;: &#123;</span><br><span class="line">              &quot;type&quot;: &quot;string&quot;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    value=&#123;&#123; firstName: &apos;&apos; &#125;&#125; // zero length string cause required check</span><br><span class="line">    onValidate=&#123;error=&gt;this.setState(&#123;errors: error &amp;&amp; error.errors&#125;)&#125; // error : &#123; [validateErrValuePath]: &#123;errorObj, errors&#125; &#125;</span><br><span class="line">  /&gt;</span><br><span class="line">  &lt;Button onClick=&#123;()=&gt;&#123;</span><br><span class="line">    if (this.state.errors)&#123;</span><br><span class="line">      postServer(this.state.value);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">      console.info(this.state.errors);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;&gt;Submit&lt;/Button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>表单校验 Validate 同样可以通过 formProps(即引用@ver01/form传入的props) 传递给表单</p>
+<p>也可以在 <a href="/zh/docs-form/theme.html#Component-Schema">组件 Schema</a> 中定义</p>
+
         </div>
         
         
@@ -200,54 +200,56 @@ function switchLang()
 
 
 
+
+
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
     <div class="card widget">
         <div class="card-content">
             <div class="menu">
-                <h3 class="menu-label" style="color:#d2041c;">
-                    Getting Started
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    开始使用
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/">
+            <a class="level is-marginless" href="/zh/docs-form/">
                 <span class="level-start">
-                    <span class="level-item">Overview</span>
+                    <span class="level-item">概述</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Basic Usage
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    基础用法
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/initialize.html">
+            <a class="level is-marginless" href="/zh/docs-form/initialize.html">
                 <span class="level-start">
-                    <span class="level-item">Initialize</span>
+                    <span class="level-item">初始化</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/value.html">
+            <a class="level is-marginless" href="/zh/docs-form/value.html">
                 <span class="level-start">
-                    <span class="level-item">Value</span>
+                    <span class="level-item">值的提交和回填</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/validate.html">
+            <a class="level is-marginless" href="/zh/docs-form/validate.html">
                 <span class="level-start" style="color:#d2041c;">
-                    <span class="level-item">Validate</span>
+                    <span class="level-item">错误校验</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Customization
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    自定义
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/theme.html">
+            <a class="level is-marginless" href="/zh/docs-form/theme.html">
                 <span class="level-start">
-                    <span class="level-item">Theme</span>
+                    <span class="level-item">主题</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/jsonSchema.html">
+            <a class="level is-marginless" href="/zh/docs-form/jsonSchema.html">
                 <span class="level-start">
                     <span class="level-item">JsonSchema</span>
                 </span>
@@ -260,21 +262,11 @@ function switchLang()
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                目录
-            </h3>
-            
-        </div>
-    </div>
-</div>
-
         
         </div>
     
 </div>
+
     
 
 
@@ -285,17 +277,6 @@ function switchLang()
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                目录
-            </h3>
-            
-        </div>
-    </div>
-</div>
-
     
     
 </div>
@@ -311,7 +292,7 @@ function switchLang()
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/zh/">
                 
-                    <img src="/zh/images/logo.png" alt="Validate" height="28">
+                    <img src="/zh/images/logo.png" alt="错误校验" height="28">
                 
                 </a>
                 <p class="is-size-7">
@@ -458,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 TAGS: '标签',
                 UNTITLED: '(无标题)',
             },
-            CONTENT_URL: '/content.json',
+            CONTENT_URL: '/zh/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);

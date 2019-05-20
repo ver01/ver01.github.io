@@ -8,18 +8,18 @@
 
 
     
-    <meta name="description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
-<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+    <meta name="description" content="React Form Component: 1 Step ReactFormEngine; Input with JsonSchema description, render full functional form view; Online Demo have to try.">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder,表单,antd">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Initialize">
+<meta property="og:title" content="@ver01&#x2F;form | Smartly Solution for React Form">
 <meta property="og:url" content="https://ver01.com/docs-form/initialize.html">
 <meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
-<meta property="og:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta property="og:description" content="React Form Component: 1 Step ReactFormEngine; Input with JsonSchema description, render full functional form view; Online Demo have to try.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-16T09:08:14.525Z">
+<meta property="og:updated_time" content="2019-05-20T11:29:44.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Initialize">
-<meta name="twitter:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta name="twitter:title" content="@ver01&#x2F;form | Smartly Solution for React Form">
+<meta name="twitter:description" content="React Form Component: 1 Step ReactFormEngine; Input with JsonSchema description, render full functional form view; Online Demo have to try.">
 
 
 
@@ -183,7 +183,7 @@ function switchLang()
 <p><a href="https://codesandbox.io/embed/211nx6j9kn?fontsize=14" target="_blank" rel="noopener">Live Demo</a> </p>
 </blockquote>
 <h2 id="Controlled-Mode"><a href="#Controlled-Mode" class="headerlink" title="Controlled Mode"></a>Controlled Mode</h2><ul>
-<li>with defaultValue props</li>
+<li>with value props</li>
 </ul>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Controlled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    value=&#123;this.state.value&#125;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 
@@ -211,12 +211,14 @@ function switchLang()
 
 
 
+
+
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
     <div class="card widget">
         <div class="card-content">
             <div class="menu">
-                <h3 class="menu-label" style="color:#d2041c;">
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
                     Getting Started
                 </h3>
                 <ul class="menu-list">
@@ -227,7 +229,7 @@ function switchLang()
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
                     Basic Usage
                 </h3>
                 <ul class="menu-list">
@@ -248,8 +250,8 @@ function switchLang()
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Customization
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    CUSTOMIZATION
                 </h3>
                 <ul class="menu-list">
                 <li>
@@ -298,6 +300,7 @@ function switchLang()
         </div>
     
 </div>
+
     
 
 
@@ -493,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
-            CONTENT_URL: '/content.json',
+            CONTENT_URL: '/en/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);

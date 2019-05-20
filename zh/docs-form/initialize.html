@@ -2,24 +2,24 @@
 <html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Initialize - @ver01/form | Smartly Solution for React Form</title>
+<title>初始化 - @ver01/form | 轻编码React表单方案</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     
-    <meta name="description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
-<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder">
+    <meta name="description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
+<meta name="keywords" content="form,react,json-schema,schema,jsonSchema,builder,表单,antd">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Initialize">
+<meta property="og:title" content="@ver01&#x2F;form | 轻编码React表单方案">
 <meta property="og:url" content="https://ver01.com/zh/docs-form/initialize.html">
-<meta property="og:site_name" content="@ver01&#x2F;form | Smartly Solution for React Form">
-<meta property="og:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta property="og:site_name" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta property="og:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-05-14T12:02:21.116Z">
+<meta property="og:updated_time" content="2019-05-20T11:29:44.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Initialize">
-<meta name="twitter:description" content="import npm package Core npm package is @ver01/form.  Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.   Uncontrolled Mode With defaultValue">
+<meta name="twitter:title" content="@ver01&#x2F;form | 轻编码React表单方案">
+<meta name="twitter:description" content="React表单框架：JsonSchema配置化表单，轻编码实现渲染；Antd、自定义主题支持。一站式表单域解决方案">
 
 
 
@@ -101,7 +101,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/zh/">
             
-                <img src="/zh/images/logo.png" alt="Initialize" height="28">
+                <img src="/zh/images/logo.png" alt="初始化" height="28">
             
             </a>
         </div>
@@ -164,31 +164,31 @@ function switchLang()
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Initialize
+                初始化
             
         </h1>
         <div class="content">
-            <h2 id="import-npm-package"><a href="#import-npm-package" class="headerlink" title="import npm package"></a>import npm package</h2><ul>
-<li><p>Core npm package is <strong>@ver01/form</strong>.</p>
+            <h2 id="项目中引入NPM包"><a href="#项目中引入NPM包" class="headerlink" title="项目中引入NPM包"></a>项目中引入NPM包</h2><ul>
+<li><p>Form的核心NPM包为 <strong>@ver01/form</strong>.</p>
 </li>
-<li><p>Most of times you need using it with theme (eg: @ver01/form-theme-antd). Or you can define theme by yourself.</p>
+<li><p>通常情况下，你需要再引入一个主题包（例如Antd主题：@ver01/form-theme-antd）。或者你也可以使用你自己的前端框架栈，进行自定义主题。</p>
 </li>
 </ul>
-<h2 id="Uncontrolled-Mode"><a href="#Uncontrolled-Mode" class="headerlink" title="Uncontrolled Mode"></a>Uncontrolled Mode</h2><ul>
-<li>With defaultValue props</li>
+<h2 id="初始化为：非受控模式"><a href="#初始化为：非受控模式" class="headerlink" title="初始化为：非受控模式"></a>初始化为：非受控模式</h2><ul>
+<li>传入props：defaultValue</li>
 </ul>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Uncontrolled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    defaultValue=&quot;hello World&quot;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;受控模式:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    defaultValue=&quot;hello World&quot;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><a href="https://codesandbox.io/embed/211nx6j9kn?fontsize=14" target="_blank" rel="noopener">Live Demo</a> </p>
+<p><a href="https://codesandbox.io/embed/211nx6j9kn?fontsize=14" target="_blank" rel="noopener">在线演示</a> </p>
 </blockquote>
-<h2 id="Controlled-Mode"><a href="#Controlled-Mode" class="headerlink" title="Controlled Mode"></a>Controlled Mode</h2><ul>
-<li>with defaultValue props</li>
+<h2 id="初始化为：受控模式"><a href="#初始化为：受控模式" class="headerlink" title="初始化为：受控模式"></a>初始化为：受控模式</h2><ul>
+<li>传入props：value</li>
 </ul>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;Ver01Form</span><br><span class="line">    schema=&#123;&#123;</span><br><span class="line">        title: &quot;Controlled Mode:&quot;,</span><br><span class="line">        type: &quot;string&quot;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    value=&#123;this.state.value&#125;</span><br><span class="line">    onChange=&#123;this.onChange.bind(this)&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><a href="https://codesandbox.io/embed/vy2237jl0l?fontsize=14" target="_blank" rel="noopener">Live Demo</a></p>
+<p><a href="https://codesandbox.io/embed/vy2237jl0l?fontsize=14" target="_blank" rel="noopener">在线演示</a></p>
 </blockquote>
 
         </div>
@@ -211,54 +211,56 @@ function switchLang()
 
 
 
+
+
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
     
     <div class="card widget">
         <div class="card-content">
             <div class="menu">
-                <h3 class="menu-label" style="color:#d2041c;">
-                    Getting Started
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    开始使用
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/">
+            <a class="level is-marginless" href="/zh/docs-form/">
                 <span class="level-start">
-                    <span class="level-item">Overview</span>
+                    <span class="level-item">概述</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Basic Usage
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    基础用法
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/initialize.html">
+            <a class="level is-marginless" href="/zh/docs-form/initialize.html">
                 <span class="level-start" style="color:#d2041c;">
-                    <span class="level-item">Initialize</span>
+                    <span class="level-item">初始化</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/value.html">
+            <a class="level is-marginless" href="/zh/docs-form/value.html">
                 <span class="level-start">
-                    <span class="level-item">Value</span>
+                    <span class="level-item">值的提交和回填</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/validate.html">
+            <a class="level is-marginless" href="/zh/docs-form/validate.html">
                 <span class="level-start">
-                    <span class="level-item">Validate</span>
+                    <span class="level-item">错误校验</span>
                 </span>
             </a></li>
                 </ul>
-                <h3 class="menu-label" style="color:#d2041c;margin-top: 32px;">
-                    Customization
+                <h3 class="menu-label" style="color:#d2041c;font-size: 1em;font-weight: bold;">
+                    自定义
                 </h3>
                 <ul class="menu-list">
                 <li>
-            <a class="level is-marginless" href="/docs-form/theme.html">
+            <a class="level is-marginless" href="/zh/docs-form/theme.html">
                 <span class="level-start">
-                    <span class="level-item">Theme</span>
+                    <span class="level-item">主题</span>
                 </span>
             </a></li><li>
-            <a class="level is-marginless" href="/docs-form/jsonSchema.html">
+            <a class="level is-marginless" href="/zh/docs-form/jsonSchema.html">
                 <span class="level-start">
                     <span class="level-item">JsonSchema</span>
                 </span>
@@ -278,17 +280,17 @@ function switchLang()
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#import-npm-package">
+        <a class="is-flex" href="#项目中引入NPM包">
         <span class="has-mr-6">1</span>
-        <span>import npm package</span>
+        <span>项目中引入NPM包</span>
         </a></li><li>
-        <a class="is-flex" href="#Uncontrolled-Mode">
+        <a class="is-flex" href="#初始化为：非受控模式">
         <span class="has-mr-6">2</span>
-        <span>Uncontrolled Mode</span>
+        <span>初始化为：非受控模式</span>
         </a></li><li>
-        <a class="is-flex" href="#Controlled-Mode">
+        <a class="is-flex" href="#初始化为：受控模式">
         <span class="has-mr-6">3</span>
-        <span>Controlled Mode</span>
+        <span>初始化为：受控模式</span>
         </a></li></ul>
         </div>
     </div>
@@ -298,6 +300,7 @@ function switchLang()
         </div>
     
 </div>
+
     
 
 
@@ -315,17 +318,17 @@ function switchLang()
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#import-npm-package">
+        <a class="is-flex" href="#项目中引入NPM包">
         <span class="has-mr-6">1</span>
-        <span>import npm package</span>
+        <span>项目中引入NPM包</span>
         </a></li><li>
-        <a class="is-flex" href="#Uncontrolled-Mode">
+        <a class="is-flex" href="#初始化为：非受控模式">
         <span class="has-mr-6">2</span>
-        <span>Uncontrolled Mode</span>
+        <span>初始化为：非受控模式</span>
         </a></li><li>
-        <a class="is-flex" href="#Controlled-Mode">
+        <a class="is-flex" href="#初始化为：受控模式">
         <span class="has-mr-6">3</span>
-        <span>Controlled Mode</span>
+        <span>初始化为：受控模式</span>
         </a></li></ul>
         </div>
     </div>
@@ -346,7 +349,7 @@ function switchLang()
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/zh/">
                 
-                    <img src="/zh/images/logo.png" alt="Initialize" height="28">
+                    <img src="/zh/images/logo.png" alt="初始化" height="28">
                 
                 </a>
                 <p class="is-size-7">
@@ -493,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 TAGS: '标签',
                 UNTITLED: '(无标题)',
             },
-            CONTENT_URL: '/content.json',
+            CONTENT_URL: '/zh/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
